@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <title>formularios</title>
+
+</head>
+<body>
+
+
+
+<center> <h1>Formulario de registro</h1>
+    <form action="" method="POST">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" name="nombre" maxlength="50" required></td>
+            </tr>
+            <tr>
+                <td><label for="apellidos">Apellidos:</label></td>
+                <td><input type="text" id="apellidos" name="apellidos" maxlength="50" required></td>
+            </tr>
+            <tr>
+                <td>Sexo:</td>
+                <td>
+                    <input type="radio" id="hombre" name="sexo" value="hombre" required>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="sexo" value="mujer" required>
+                    <label for="mujer">Mujer</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Correo electrónico:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="poblacion">Población:</label></td>
+                <td>
+                    <select id="poblacion" name="poblacion" required>
+                        <option value="Bucaramanga">Bucaramanga</option>
+                        <option value="Giron">Giron</option>
+                        <option value="Floridablanca">Floridablanca</option>
+                        <option value="Piedecuesta">Piedecuesta</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="descripcion">Descripción:</label></td>
+                <td><textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="novedades" name="novedades" checked>
+                    <label for="novedades">Deseo recibir información sobre novedades y ofertas</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="condiciones" name="condiciones" required>
+                    <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit">Enviar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+
+    </center>
+
+
+
+
+
+</body>
+</html>
